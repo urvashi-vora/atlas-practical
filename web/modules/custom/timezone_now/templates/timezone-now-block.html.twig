@@ -1,0 +1,7 @@
+{{ attach_library('timezone_now/custom') }}
+
+<div class="custom-timezone" style="width: 300px; background-color: #f0f0f0; border: 1px solid #ccc; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); padding: 10px; display: flex; flex-direction: column;">
+    <div class="location" style="margin: 0; font-size: 16px; color: #333; font-weight: bold;">{{ country }}, {{ city }}</div>
+    <div class="current-time" style="margin: 0; font-size: 16px; color: #333;">{{ formatted_time }}</div>
+</div>
+

@@ -1,0 +1,33 @@
+<?php
+
+/**
+ * @file
+ * Hooks implementation for the Timezone Now module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function timezone_now_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.timezone_now':
+      return '<p>' . t('A module to display the current site location and the current time.') . '</p>';
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function timezone_now_theme($existing, $type, $theme, $path) {
+  return [
+    'timezone_now_block' => [
+      'variables' => [
+        'country' => NULL,
+        'city' => NULL,
+        'formatted_time' => NULL,
+      ],
+    ],
+  ];
+}

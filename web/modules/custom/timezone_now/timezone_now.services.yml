@@ -1,0 +1,4 @@
+services:
+  timezone_now.convert_timezone:
+    class: Drupal\timezone_now\ConvertTimezone
+    arguments: ['@config.factory', '@datetime.time']

@@ -1,0 +1,12 @@
+name: Timezone Now
+type: module
+description: A module to display the current site location and the current time.
+core_version_requirement: ^10 || ^9
+package: Custom
+dependencies:
+  - drupal:block
+  - drupal:config
+libraries:
+  - timezone_now/custom
+
+
