@@ -1,0 +1,14 @@
+uuid: 0f592d99-cbed-471c-8d31-7824aefde0f9
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vymHlgJy26BuI5GGj9-IXjwR3dRC5C0tij4BpWJnoqw
+id: feedback
+label: 'Website feedback'
+recipients:
+  - urvashivora51@gmail.com
+reply: ''
+weight: 0
+message: 'Your message has been sent.'
+redirect: ''
